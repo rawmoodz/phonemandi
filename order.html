@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Place Order – Phone Mandi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <img src="images/logo.png" alt="Phone Mandi Logo" class="logo">
+  <h1>Place Order</h1>
+  <p class="tagline">Confirm details to proceed</p>
+</header>
+
+<!-- MENU -->
+<div class="menu-bar">
+  <span class="menu-btn" onclick="toggleMenu()">☰ Menu</span>
+</div>
+
+<div id="sideMenu" class="side-menu">
+  <a href="#" onclick="window.location.href='index.html'">Home</a>
+  <a href="#" onclick="window.location.href='buy.html'">Buy Phones</a>
+  <a href="#" onclick="window.location.href='sell.html'">Sell Your Phone</a>
+  <a href="#" onclick="window.location.href='contact.html'">Contact / Support</a>
+</div>
+
+<main class="phone-list">
+
+  <!-- PHONE DETAILS -->
+  <div class="phone-card">
+    <h2>Phone Details</h2>
+
+    <label>Phone Code</label>
+    <input type="text" value="PH-RAS-012" readonly>
+
+    <label>Phone Model</label>
+    <input type="text" value="Samsung Galaxy M12 (64GB)" readonly>
+  </div>
+
+  <!-- CUSTOMER DETAILS -->
+  <div class="phone-card">
+    <h2>Your Details</h2>
+
+    <input type="text" id="custName" placeholder="Enter your full name">
+    <input type="tel" id="custPhone" placeholder="WhatsApp enabled number">
+    <input type="tel" placeholder="Alternative number (optional)">
+  </div>
+
+  <!-- PICKUP POINT -->
+  <div class="phone-card">
+    <h2>Select Pickup Point</h2>
+
+    <label>
+      <input type="radio" name="pickup" id="pickup-nearby" checked>
+      Pickup from nearby location provided by you
+    </label><br><br>
+
+    <label>
+      <input type="radio" name="pickup" id="pickup-chauraha">
+      <strong>Chandrashekhar Azad Chauraha, Rasra</strong> 🎁
+      <br><small>Get ₹100 discount</small>
+    </label>
+  </div>
+
+  <!-- ADDRESS -->
+  <div class="phone-card" id="address-box">
+    <h2>Pickup Address</h2>
+
+    <input type="text" id="addr1" placeholder="House / Flat / Shop No">
+    <input type="text" id="addr2" placeholder="Area / Locality">
+    <input type="text" id="city" placeholder="City">
+    <input type="text" placeholder="Nearby Landmark (optional)">
+  </div>
+
+  <!-- PAYMENT METHOD -->
+  <div class="phone-card">
+    <h2>Payment Method</h2>
+
+    <label>
+      <input type="radio" name="payment" id="pay-advance" checked>
+      <strong>UPI Advance – Reserve</strong> (₹100 non-refundable)
+      <br><small>Remaining amount to be paid on delivery</small>
+    </label><br><br>
+
+    <label>
+      <input type="radio" name="payment" id="pay-cod">
+      <strong>Cash on Delivery</strong>
+      <br><small>₹50 no-advance handling charge</small>
+    </label>
+  </div>
+
+  <!-- UPI VERIFICATION -->
+  <div class="phone-card" id="upi-box">
+    <h2>UPI Verification</h2>
+
+    <input
+      type="text"
+      id="upiName"
+      placeholder="UPI / Bank Account Holder Name"
+    >
+
+    <p style="font-size:13px; color:#c0392b;">
+      ⚠️ If wrong name is entered, payment will not be accepted and not refunded.
+    </p>
+  </div>
+
+  <!-- FINAL CONFIRMATION -->
+  <div class="phone-card">
+    <label style="font-size:14px;">
+      <input type="checkbox" id="confirmDetails">
+      I confirm that all the details provided by me are correct and genuine.
+      I understand that providing wrong information may lead to order rejection
+      or further issues.
+    </label>
+  </div>
+
+  <!-- PROCEED -->
+  <div class="phone-card">
+    <button id="proceedBtn" class="btn primary" type="button">
+      Proceed
+    </button>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>Order will be confirmed only after verification</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="js/menu.js"></script>
+<script src="js/order.js"></script>
+
+</body>
+</html>

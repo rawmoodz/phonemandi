@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UPI Payment – Phone Mandi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+<!-- MENU BAR -->
+<div class="menu-bar">
+  <span class="menu-btn" onclick="toggleMenu()">☰ Menu</span>
+</div>
+
+<!-- SIDE MENU -->
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="buy.html">Buy Phones</a>
+  <a href="sell.html">Sell Your Phone</a>
+  <a href="#" onclick="window.location.href='contact.html'">
+  Contact / Support
+</a>
+</div>
+
+    <img src="images/logo.png" alt="Phone Mandi Logo" class="logo">
+    <h1>UPI Payment</h1>
+    <p class="tagline">Reserve your phone</p>
+  </header>
+
+  <main class="phone-list">
+
+    <!-- QR SECTION -->
+    <div class="phone-card" style="text-align:center;">
+      <h2>Pay ₹100 to Reserve</h2>
+      <img src="images/qr-100.png" alt="UPI QR" style="width:220px; max-width:90%;">
+      <p>Scan the QR code and pay ₹100</p>
+    </div>
+
+    <!-- WARNING -->
+    <div class="phone-card">
+      <div style="display:flex; align-items:center;">
+        <img src="images/caution.png" alt="Caution" style="width:22px; margin-right:8px;">
+        <strong>This order will not be confirmed if payment is not received.</strong>
+      </div>
+    </div>
+
+    <!-- ACTION -->
+    <div class="phone-card">
+      <a href="success.html" class="btn primary">Payment Done</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>We will verify the payment and confirm on WhatsApp</p>
+  </footer>
+<script src="js/menu.js"></script>
+</body>
+</html>

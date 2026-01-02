@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sell Your Phone – Phone Mandi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+<!-- MENU BAR -->
+<div class="menu-bar">
+  <span class="menu-btn" onclick="toggleMenu()">☰ Menu</span>
+</div>
+
+<!-- SIDE MENU -->
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="buy.html">Buy Phones</a>
+  <a href="sell.html">Sell Your Phone</a>
+  <a href="#" onclick="window.location.href='contact.html'">
+  Contact / Support
+</a>
+</div>
+
+  <img src="images/logo.png" class="logo" alt="Phone Mandi">
+  <h1>Sell Your Phone</h1>
+  <p class="tagline">Fast • Local • Trusted</p>
+</header>
+
+<main class="phone-list">
+
+  <!-- PHONE DETAILS -->
+  <div class="phone-card">
+    <h2>Phone Details</h2>
+    <input type="text" id="brand" placeholder="Brand (Samsung, Redmi)" required>
+    <input type="text" id="model" placeholder="Model (Galaxy M12)" required>
+
+    <label>Storage</label>
+    <select id="storage">
+      <option value="">Select Storage</option>
+      <option>32 GB</option>
+      <option>64 GB</option>
+      <option>128 GB</option>
+      <option>256 GB</option>
+    </select>
+  </div>
+
+  <!-- CONNECTIVITY -->
+  <div class="phone-card">
+    <h2>Connectivity</h2>
+    <label><input type="checkbox" id="c4g"> 4G</label><br>
+    <label><input type="checkbox" id="c5g"> 5G</label>
+  </div>
+
+  <!-- CONDITION -->
+  <div class="phone-card">
+    <h2>Condition</h2>
+    <label><input type="radio" name="condition" checked> Superb</label><br>
+    <label><input type="radio" name="condition"> Fine</label><br>
+    <label><input type="radio" name="condition"> Average</label>
+  </div>
+
+  <!-- SELLER DETAILS -->
+  <div class="phone-card">
+    <h2>Your Details</h2>
+    <input type="text" id="sellerName" placeholder="Your Name" required>
+    <input type="tel" id="sellerPhone" placeholder="WhatsApp Number" required>
+    <input type="tel" placeholder="Alternative Number (optional)">
+  </div>
+
+  <!-- PICKUP POINT -->
+  <div class="phone-card">
+    <h2>Select Pickup Point</h2>
+
+    <label>
+      <input type="radio" name="pickup" id="pickup-nearby" checked>
+      Pickup from nearby location
+    </label><br><br>
+
+    <label>
+      <input type="radio" name="pickup" id="pickup-chauraha">
+      <strong>Chandrashekhar Azad Chauraha, Rasra</strong> 🎁
+      <br><small>Get ₹100 bonus</small>
+    </label>
+  </div>
+
+  <!-- ADDRESS -->
+  <div class="phone-card" id="sell-address-box">
+    <h2>Pickup Address</h2>
+    <input type="text" id="addr1" placeholder="House / Shop No" required>
+    <input type="text" id="addr2" placeholder="Area / Locality" required>
+    <input type="text" id="city" placeholder="City" required>
+    <input type="text" placeholder="Nearby Landmark (optional)">
+  </div>
+
+  <!-- SUBMIT -->
+  <div class="phone-card">
+    <button id="sellSubmitBtn" class="btn primary" type="button">
+      Submit Details
+    </button>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>We’ll contact you on WhatsApp within 24–48 hours</p>
+</footer>
+
+<script src="js/sell.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

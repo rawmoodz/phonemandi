@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel – Phone Mandi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="images/logo.png" class="logo" alt="Phone Mandi">
+  <h1>Admin Panel</h1>
+  <p class="tagline">Manage Phone Stock</p>
+</header>
+
+<main class="phone-list">
+
+  <!-- ADD PHONE -->
+  <div class="phone-card">
+    <h2>Add Phone to Stock</h2>
+
+    <input type="text" id="code" placeholder="Phone Code (e.g. PM-001)">
+    <input type="text" id="brand" placeholder="Brand">
+    <input type="text" id="model" placeholder="Model">
+    <input type="text" id="storage" placeholder="Storage (64GB)">
+    <input type="number" id="price" placeholder="Price (₹)">
+    <input type="text" id="condition" placeholder="Condition (Superb/Fine)">
+
+    <button id="addBtn" class="btn primary" type="button">
+      Add Phone
+    </button>
+  </div>
+
+  <!-- REMOVE PHONE -->
+  <div class="phone-card">
+    <h2>Remove Phone</h2>
+
+    <input type="text" id="removeCode" placeholder="Enter Phone Code">
+
+    <button id="removeBtn" class="btn secondary" type="button">
+      Remove Phone
+    </button>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>⚠️ Admin access only</p>
+</footer>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

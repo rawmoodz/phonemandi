@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Details Submitted – Phone Mandi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+<!-- MENU BAR -->
+<div class="menu-bar">
+  <span class="menu-btn" onclick="toggleMenu()">☰ Menu</span>
+</div>
+
+<!-- SIDE MENU -->
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="buy.html">Buy Phones</a>
+  <a href="sell.html">Sell Your Phone</a>
+  <a href="#" onclick="window.location.href='contact.html'">
+  Contact / Support
+</a>
+</div>
+
+    <img src="images/logo.png" alt="Phone Mandi Logo" class="logo">
+    <h1>Details Submitted</h1>
+  </header>
+
+  <main class="phone-list">
+
+    <!-- SUCCESS -->
+    <div class="phone-card" style="text-align:center;">
+      <img src="images/tick.png" alt="Success" style="width:70px;">
+      <p style="margin-top:15px;">
+        <strong>
+          Our team will reach out to you within 24–48 hours. <br>
+          Your patience is appreciated.
+        </strong>
+      </p>
+      <p>Your details have been successfully submitted.</p>
+      <p>We will contact you on <strong>WhatsApp</strong>.</p>
+    </div>
+
+    <!-- TERMS -->
+    <div class="phone-card">
+      <h3>Important Information</h3>
+
+      <p>
+        • Pickup or delivery may be rejected if the area is unserviceable.
+        In such cases, the ₹100 advance (if paid) will be refunded.
+      </p>
+
+      <p>
+        • Refunds are available within <strong>24 hours</strong> only in case of
+        <strong>major functional issues</strong>.
+      </p>
+
+      <p><strong>Major Issues:</strong></p>
+      <ul>
+        <li>Display or touch not working</li>
+        <li>No network / SIM not detected</li>
+        <li>Phone automatically restarts or shuts down</li>
+      </ul>
+
+      <p>
+        <strong>Minor issues</strong> (battery, heating, camera quality,
+        scratches, software settings) must be checked at the time of delivery
+        and are <strong>not eligible</strong> for refund.
+      </p>
+
+      <p>
+        <strong>Pickup Fee:</strong><br>
+        • COD order → ₹100 pickup fee deducted from refund<br>
+        • Advance order → ₹50 pickup fee deducted from refund
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Thank you for choosing Phone Mandi</p>
+  </footer>
+<script src="js/menu.js"></script>
+</body>
+</html>

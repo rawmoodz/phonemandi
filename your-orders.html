@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Orders – Phone Mandi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="payment-header">
+  <h1>Your Orders</h1>
+  <p class="payment-subtext">
+    For your order’s security, we only share order information on WhatsApp.
+  </p>
+</header>
+
+<!-- MENU BAR -->
+<div class="menu-bar">
+  <span class="menu-btn" onclick="toggleMenu()">☰ Menu</span>
+</div>
+
+<!-- SIDE MENU -->
+<div id="sideMenu" class="side-menu">
+  <a href="#" onclick="window.location.href='index.html'">Home</a>
+  <a href="#" onclick="window.location.href='buy.html'">Buy Phones</a>
+  <a href="#" onclick="window.location.href='sell.html'">Sell Your Phone</a>
+  <a href="#" onclick="window.location.href='your-orders.html'">Your Orders</a>
+  <a href="#" onclick="window.location.href='terms.html'">Terms & Conditions</a>
+  <a href="#" onclick="window.location.href='contact.html'">Help & Support</a>
+</div>
+
+<main class="phone-list">
+
+  <div class="phone-card" style="text-align:center;">
+    <p style="font-size:15px; margin-bottom:15px;">
+      To protect your privacy and prevent misuse, order details are shared
+      only after verification on WhatsApp.
+    </p>
+
+    <!-- WHATSAPP BUTTON -->
+    <button class="whatsapp-btn" onclick="openWhatsApp()">
+      Check orders using WhatsApp
+    </button>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>© Phone Mandi – Secure Order Support</p>
+</footer>
+
+<!-- MENU SCRIPT -->
+<script src="js/menu.js"></script>
+
+<!-- WHATSAPP LOGIC -->
+<script>
+function openWhatsApp() {
+  const phoneNumber = "919793431385"; // Phone Mandi WhatsApp number
+  const message = "Order Details";
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  // Opens WhatsApp with message typed.
+  // User can review and send manually.
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
